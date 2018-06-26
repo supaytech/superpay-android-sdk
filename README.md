@@ -178,4 +178,20 @@ dependencies {
     2. 必须打包成为发布版本的 apk，apk 签名必须和在微信开放平台注册的一致，微信开放平台签名要求: MD5，无冒号；
     3. 清理微信缓存；
     4. 如果签名包名均正确，仍旧返回 -1 报错，请检查时间戳格式是否有问题或重置微信开放平台的安卓版本的签名包名。
+    
+###  <span id = "issue2">问题二：与其他第三方SDK有冲突</span>
 
+- 报错Log:
+
+```java
+Error:Execution failed for task ':app:transformClassesWithJarMergingForDebug'.
+com.android.build.api.transform.TransformException:
+java.util.zip.ZipException: duplicate entry: a/a/a/a.class
+```
+
+- 报错原因:
+    1. 没有加过滤混淆的代码
+    2. 有重复的jar包存在
+
+- 解决方案:
+    2. 删除重复的 jar 包(可以是第三方SDK中的,也可以是 superPay SDK 中的jar包)
