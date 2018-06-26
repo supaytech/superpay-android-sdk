@@ -13,10 +13,13 @@
 
 ## <h2 id='1'>简介</h2>
 本项目为支付sdk的示例项目。
-[![](https://img.shields.io/badge/API-14%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=14) [![](https://img.shields.io/badge/platform-android-brightgreen.svg)](https://developer.android.com/index.html) [![Codacy Badge](https://img.shields.io/hexpm/l/plug.svg)](https://github.com/jeasonlzy/okhttp-OkGo/blob/master/LICENSE)  [![]
 
-[![](https://img.shields.io/badge/superPay-v1.0.3-brightgreen.svg)](https://bintray.com/supay/superPay/superPay) [![](https://img.shields.io/badge/OkRx-v1.0.2-brightgreen.svg)](https://github.com/jeasonlzy/okhttp-OkGo) [![]
-[![Build Status](https://travis-ci.org/google/gson.svg?branch=master)](https://travis-ci.org/google/gson)
+[![](https://img.shields.io/badge/API-14%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=19)
+[![](https://img.shields.io/badge/platform-android-brightgreen.svg)](https://developer.android.com/index.html) 
+[![Codacy Badge](https://img.shields.io/hexpm/l/plug.svg)](https://github.com/jeasonlzy/okhttp-OkGo/blob/master/LICENSE)
+[![](https://img.shields.io/badge/superPay-v1.0.3-brightgreen.svg)](https://bintray.com/supay/superPay/superPay)
+[![](https://img.shields.io/badge/wechat-sdk-android-with-mta-v5.1.4-brightgreen.svg)](https://bintray.com/wechat-sdk-team/maven/com.tencent.mm.opensdk%3Awechat-sdk-android-with-mta) 
+[![](https://img.shields.io/badge/gson-v2.8.4-brightgreen.svg)](https://travis-ci.org/google/gson) 
 
 ## <h2 id='2'>版本要求</h2>
 Android SDK 要求 Android 4.4 及以上版本
