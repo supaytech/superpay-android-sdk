@@ -1,21 +1,18 @@
-# Ping++ Android SDK
+# superPay Android SDK
 
 ## 目录
 * [1. 简介](#1)
-* [2. 环境要求](#2)
+* [2. 版本要求](#2)
 * [3. 快速体验](#3)
 * [4. 工程配置及使用](#4)
     * [4.1 导入依赖包](#4.1)
     * [4.2 权限配置](#4.2)
-    * [4.3 使用 superPay 标准版 SDK](#4.3)
+    * [4.3 使用 superPay SDK](#4.3)
 * [6. 注意事项](#6)
 * [7. 常见问题](#issues)
 
 ## <h2 id='1'>简介</h2>
-lib 目录包含两个 Library Project：pingpp 和 pingpp_ui。
-可以直接将两个 Library Project 作为依赖库，导入到你的项目。支持 Android Studio（建议）和 Eclipse。
-example 文件夹里面是一个简单的接入示例，该示例仅供参考。想使用该示例，请直接将本仓库导入。
-docs 目录里面是 Android SDK 的接入指南。
+本项目为支付sdk的示例项目。
 
 ## <h2 id='2'>版本要求</h2>
 Android SDK 要求 Android 4.4 及以上版本
@@ -68,12 +65,8 @@ dependencies {
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 ```
 
-### <h3 id='4.3'>三、使用 Ping++ 标准版 SDK</h3>
+### <h3 id='4.3'>三、使用 superPay SDK</h3>
 #### 1. 清单文件注册相关类
-
-- Ping++ SDK所需要注册
-
-
 - 微信支付需要注册
     <font color='red'> 注：
     1. 需要将以下“替换成自己 APK 的包名”换成在微信平台上注册填写的包名
@@ -172,9 +165,8 @@ dependencies {
 
 ## <h2 id='6'>注意事项</h2>
 
-- Pingpp Android SDK 可能会与友盟、百度地图等其他第三方 jar 包冲突，当同时使用这些 jar 包的时候用户需要根据情况判断保留哪一方的 jar 包。
+- superPay SDK 可能会与友盟、百度地图等其他第三方 jar 包冲突，当同时使用这些 jar 包的时候用户需要根据情况判断保留哪一方的 jar 包。
 - 新版建议使用 Android Studio
-- 请勿直接使用客户端支付结果作为最终判定订单状态的依据，由于 Ping++ 没有参与你的客户端和第三方渠道的交互，无法保证客户端支付结果的安全性，建议订单状态的更新对比客户端的渠道同步回调信息和服务端的 Ping++ Webhooks 通知来确定是否修改。
 
 ## <span id = "issues">常见问题</span>
 ### 问题一： 微信支付失败，返回 wx_err_code:-1
